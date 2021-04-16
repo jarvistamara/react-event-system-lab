@@ -1,6 +1,6 @@
 // Code Keypad Component Here
 import React from 'react'
-class Keypad extends Component {
+class Keypad extends React.Component {
 
 
     handleInputPassword = () => {
@@ -11,7 +11,7 @@ class Keypad extends Component {
     render() {
         return (
             <div>
-                <input type="password" onKeyUp={handleInputPassword}/>
+                <input type="password" onKeyUp={this.handleInputPassword}/>
             </div>
         )
     }

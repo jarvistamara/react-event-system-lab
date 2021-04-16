@@ -1,7 +1,7 @@
 // Code EyesOnMe Component Here
 import React from 'react'
 
-class EyesOnMe extends Component {
+class EyesOnMe extends React.Component {
     onBlur = () => {
         console.log('Hey! Eyes on me!')
     }
@@ -13,8 +13,7 @@ class EyesOnMe extends Component {
     render() {
         return (
             <div>
-                <button onFocus={this.onFocus} />
-                <button onBlur={this.onBlur} />
+                <button onFocus={this.onFocus} onBlur={this.onBlur}/>
             </div>
         )
     }
